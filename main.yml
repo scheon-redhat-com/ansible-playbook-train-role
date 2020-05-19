@@ -13,6 +13,7 @@
 #   Bare variables
 #   No use of handlers
 
+
 - name: configuration
   hosts: all
   gather_facts: false # remove later! speeds up testing
@@ -27,6 +28,8 @@
 
 - name: deploy haproxy
   hosts: frontends
+  var : 
+    GUID : 66cc
   gather_facts: false # remove later! speeds up testing
   become: true
 
