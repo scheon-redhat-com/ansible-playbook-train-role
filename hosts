@@ -1,5 +1,5 @@
 [frontends] 
-frontend1 ansible_host=frontend1."{{ GUID }}".internal
+frontend1 ansible_host=frontend1.66cc.internal
 
 [apps] 
 app1 ansible_host=app1."{{ GUID }}".internal
