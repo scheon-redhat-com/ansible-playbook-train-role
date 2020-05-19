@@ -13,6 +13,8 @@ frontends
 apps
 appdbs
 
+[vars]
+GUID=66cc
 [internal:vars]
 #GUID="{{ lookup('env', 'GUID') }}"
 GUID=66cc
