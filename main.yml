@@ -1,9 +1,11 @@
 ---
 
+
 - name : setup lb tier
   hosts : frontends
   vars : 
    GUID : 66cc
+   ansible_become: yes
   roles : 
     - { name : common } 
     - { name : lb-tier }
