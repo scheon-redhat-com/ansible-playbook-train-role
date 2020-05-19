@@ -3,7 +3,7 @@
 - name : setup lb tier
   hosts : frontends
   vars : 
-  GUID : 66cc
+   GUID : 66cc
   roles : 
     - { name : common } 
     - { name : lb-tier }
