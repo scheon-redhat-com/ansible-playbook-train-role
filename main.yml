@@ -28,7 +28,7 @@
 
 - name: deploy haproxy
   hosts: frontends
-  var : 
+  vars : 
     GUID : 66cc
   gather_facts: false # remove later! speeds up testing
   become: true
