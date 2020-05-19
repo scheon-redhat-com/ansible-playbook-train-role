@@ -1,0 +1,14 @@
+# mkdir repodir/inventory
+
+# export GUID=<GUID of your three tier env>
+##
+# cat << EOF > repodir/inventory/hosts
+[frontends]
+frontend1.66cc.internal ansible_ssh_host=frontend1.66cc.example.opentlc.com
+
+[apps]
+app1.66cc.internal ansible_ssh_host=app1.66cc.example.opentlc.com
+app2.66cc.internal ansible_ssh_host=app2.66cc.example.opentlc.com
+
+[appdbs]
+appdb1.66cc.internal ansible_ssh_host=appdb1.66cc.example.opentlc.com
