@@ -12,12 +12,16 @@
 
 - name : setup app tier
   hosts : apps
+  vars : 
+   ansible_become: yes
   roles : 
     - { name : common }
     - { name : app-tier }
 
 - name : setup db-tier
   hosts : appdbs
+  vars : 
+   ansible_become: yes
   roles : 
     - { name : common }
 #    - { name : db-tier }
