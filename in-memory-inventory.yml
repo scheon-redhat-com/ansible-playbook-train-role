@@ -12,10 +12,12 @@
       add_host:
         name: "{{item.public_v4}}"
         group: "{{item.metadata.group}}"
-      with_items: "{{result.openstack_servers}}"
+      with_items: "{{result.ansible_facts}}"
+#      with_items: "{{result.openstack_servers}}"
 
     - name: Add host
       add_host:
         name: "{{item.public_v4}}"
         group: "{{item.metadata.deployment_name}}"
-      with_items: "{{result.openstack_servers}}"
+      with_items: "{{result.ansible_facts}}"
+#      with_items: "{{result.openstack_servers}}"
