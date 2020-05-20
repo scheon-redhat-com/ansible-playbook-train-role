@@ -1,5 +1,7 @@
 ---
 
+- name : Import In-memory inventory play
+  import_playbook : in-memory-inventory.yml
 
 - name : setup lb tier
   hosts : frontends
